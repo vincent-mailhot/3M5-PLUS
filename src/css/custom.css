@@ -1,0 +1,32 @@
+:root {
+  --ifm-color-primary: #7f52ff;
+  --ifm-color-primary-dark: #6b3aff;
+  --ifm-color-primary-darker: #612eff;
+  --ifm-color-primary-darkest: #440aeb;
+  --ifm-color-primary-light: #936aff;
+  --ifm-color-primary-lighter: #9d76ff;
+  --ifm-color-primary-lightest: #bb9fff;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(127, 82, 255, 0.12);
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #a98bff;
+  --ifm-color-primary-dark: #9470ff;
+  --ifm-color-primary-darker: #8a63ff;
+  --ifm-color-primary-darkest: #6a3aff;
+  --ifm-color-primary-light: #bea6ff;
+  --ifm-color-primary-lighter: #c8b3ff;
+  --ifm-color-primary-lightest: #e6dcff;
+  --docusaurus-highlighted-code-line-bg: rgba(169, 139, 255, 0.18);
+}
+
+/* Les étapes numérotées ressortent mieux */
+.markdown h3 {
+  margin-top: 1.8rem;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+}
