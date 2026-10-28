@@ -6,8 +6,11 @@ const config = {
   title: "Notes 3M5 – Intro Mobile",
   tagline: "Notes de cours détaillées : Kotlin, Jetpack Compose et Android",
   favicon: "img/logo.svg",
-  url: "http://localhost",
-  baseUrl: "/",
+  url: "https://vincent-mailhot.github.io",
+  baseUrl: "/notes-3M5-intro-mobile/",
+  organizationName: "vincent-mailhot",
+  projectName: "notes-3M5-intro-mobile",
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
