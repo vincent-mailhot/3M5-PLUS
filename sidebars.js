@@ -4,6 +4,7 @@
 const sidebars = {
   cours: [
     "accueil",
+    "index-notions",
     {
       type: "category",
       label: "Partie 1 — Kotlin 🟣",

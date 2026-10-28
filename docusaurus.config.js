@@ -17,7 +17,24 @@ const config = {
   i18n: { defaultLocale: "fr", locales: ["fr"] },
 
   markdown: { mermaid: true },
-  themes: ["@docusaurus/theme-mermaid"],
+  themes: [
+    "@docusaurus/theme-mermaid",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["fr", "en"],
+        docsRouteBasePath: "/",
+        indexBlog: false,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchResultLimits: 10,
+        searchBarShortcutHint: true,
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -43,6 +60,7 @@ const config = {
         logo: { alt: "Logo", src: "img/logo.svg" },
         items: [
           { type: "docSidebar", sidebarId: "cours", position: "left", label: "Cours 🧑‍🏫" },
+          { to: "/index-notions", position: "left", label: "Index des notions 🔎" },
           { to: "/aide-memoire", position: "left", label: "Aide-mémoire 📋" },
           { to: "/travaux-pratiques", position: "left", label: "Travaux pratiques 🛠️" },
           {
